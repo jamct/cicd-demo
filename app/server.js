@@ -5,6 +5,7 @@ function buildResponse(env = process.env) {
   return {
     message: env.GREETING || "Hallo aus der Pipeline",
     version: env.APP_VERSION || "dev",
+    docker: "cool"
   };
 }
 
