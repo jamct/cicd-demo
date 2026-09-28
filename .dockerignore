@@ -1,0 +1,7 @@
+.git
+.github
+.gitlab-ci.yml
+deploy
+**/node_modules
+**/*.test.js
+README.md
