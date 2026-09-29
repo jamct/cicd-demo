@@ -1,7 +1,7 @@
 name: demo
 reference: main
 compose_files:
-  - docker-compose.yml
+  - ./doco/docker-compose.yml
 
 environment:
   APP_HOST: doco-demo.dev.liefer.it
