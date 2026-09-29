@@ -5,4 +5,4 @@ compose_files:
 
 environment:
   APP_HOST: doco-demo.dev.liefer.it
-  APP_MESSAGE: "Version 1 – deployt von Doco-CD"
+  APP_MESSAGE: "Version 1 – deployt von Doco-CD!"
