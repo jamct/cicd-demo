@@ -2,6 +2,7 @@
 services:
   web:
     image: nginx
+    scale: 0
     restart: unless-stopped
     environment:
       WHOAMI_NAME: ${APP_MESSAGE}
