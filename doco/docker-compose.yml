@@ -1,7 +1,7 @@
 # Die Werte für ${APP_HOST} und ${APP_MESSAGE} kommen aus .doco-cd.yml.
 services:
   web:
-    image: traefik/whoami:v1.12
+    image: nginx
     restart: unless-stopped
     environment:
       WHOAMI_NAME: ${APP_MESSAGE}
