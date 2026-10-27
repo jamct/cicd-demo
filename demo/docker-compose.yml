@@ -1,8 +1,14 @@
 services:
   web:
-    image: traefik/whoami:v1.11
+    image: php:8.3-apache
     restart: unless-stopped
-    environment:
-      WHOAMI_NAME: "Version 2 – Grüße aus der Live-Demo"
+    configs:
+      - source: index
+        target: /var/www/html/index.php
     ports:
       - "127.0.0.1:10003:80"
+
+configs:
+  index:
+    content: |
+      <?php phpinfo();
