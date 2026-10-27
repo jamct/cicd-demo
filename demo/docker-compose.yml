@@ -1,0 +1,8 @@
+services:
+  web:
+    image: traefik/whoami:v1.12
+    restart: unless-stopped
+    environment:
+      WHOAMI_NAME: "Version 1 – deployt von Doco-CD"
+    ports:
+      - "127.0.0.1:10003:80"
